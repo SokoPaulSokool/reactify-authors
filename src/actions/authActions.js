@@ -53,6 +53,7 @@ export const loginUser = postData => dispatch => {
           }
         }
       } else {
+        window.localStorage.setItem('token', res.user.token)
         toast.success("Welcome " + res.user.username, {
           position: toast.POSITION.TOP_CENTER
         });

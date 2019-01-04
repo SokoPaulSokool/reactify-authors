@@ -7,12 +7,9 @@ import {
   MDBNavbarToggler,
   MDBCollapse,
   MDBNavItem,
-  MDBMDBNavLink,
-  MDBIcon
+  
 } from "mdbreact";
-import { BrowserRouter as Router } from "react-router-dom";
 import { NavLink } from "react-router-dom";
-import SignInComponent from "../signin/SignInComponent";
 class NavbarComponent extends Component {
   constructor(props) {
     super(props);
@@ -28,12 +25,11 @@ class NavbarComponent extends Component {
     });
   }
   render() {
-    const container = { height: 1300 };
     return (
       <div>
         <header>
           <MDBNavbar
-            className="bg-primary"
+            className="bg-pr"
             dark
             expand="md"
             scrolling

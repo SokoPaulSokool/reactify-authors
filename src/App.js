@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import NavbarComponent from "./components/navbar/NavbarComponent";
 import SignUpComponent from "./components/signup/SignUpComponent";
@@ -7,7 +6,7 @@ import SignInComponent from "./components/signin/SignInComponent";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 import { Provider } from "react-redux";
 import store from "./store";
-import { ToastContainer, toast } from "react-toastify";
+import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ArticlesList from "./components/articlesList/ArticlesList";
 class App extends Component {

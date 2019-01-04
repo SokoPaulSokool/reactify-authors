@@ -1,11 +1,12 @@
 import { GET_ARTICLES } from "./types";
 export const getArticles = () => dispatch => {
+  let token = window.localStorage.getItem('token')
   fetch("http://127.0.0.1:8000/api/articles", {
     method: "GET",
     headers: {
       "content-type": "application/json",
       authorization:
-        "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpZCI6NiwibmFtZSI6ImhlbnJ5IiwiZXhwIjoxNTQ2NjkwMDY5fQ.r9a78ATrbmi6dXExYfPSWmyJjKkjkQphWwL7mxgMcO0"
+        `Bearer ${token}`
     }
   })
     .then(res => res.json())

@@ -15,7 +15,6 @@ class SignUpComponent extends Component {
   };
   onSubmit = e => {
     e.preventDefault();
-    // console.log(this.props);
     this.props.createUser(this.state);
   };
   render() {
